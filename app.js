@@ -39,8 +39,8 @@ getQuote("https://api.adviceslip.com/advice")
   .then((result) => {
     document.querySelector("#advice-id").innerHTML += result.slip.id
     document.querySelector(".quote p").innerHTML = `"${result.slip.advice}"`
-    console.log(result.slip.id)
-    console.log(result.slip.advice);
+    // console.log(result.slip.id)
+    // console.log(result.slip.advice);
   })
   .catch((result) => {
     console.log(`An error of ${result} occured!`);
